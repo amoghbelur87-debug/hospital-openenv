@@ -11,3 +11,4 @@ services:
         method: GET
       - path: /reset
         method: POST
+        
