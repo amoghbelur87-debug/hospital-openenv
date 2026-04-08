@@ -1,9 +1,13 @@
-version: 1
+version: "1"
 
 name: hospital-guardian-ai
 
-endpoints:
-  - path: /health
-    method: GET
-  - path: /reset
-    method: POST
+services:
+  - name: api
+    type: web
+    port: 7860
+    routes:
+      - path: /health
+        method: GET
+      - path: /reset
+        method: POST
